@@ -3,13 +3,6 @@
 // Global Variables
 let users;
 
-// local storage
-if (localStorage.getItem("users") === null) {
-  users = [];
-} else {
-  users = JSON.parse(localStorage.getItem("users"));
-}
-
 // HTML VARIABLES
 let signInBtn = document.getElementById('sign-in-btn');
 let signUpBtn = document.getElementById('sign-up-btn');
@@ -65,4 +58,12 @@ function signInHandler() {
   }
 }
 
+
+
+// local storage
+if (localStorage.getItem("users") === null) {
+  users = [];
+} else {
+  users = JSON.parse(localStorage.getItem("users"));
+}
 
